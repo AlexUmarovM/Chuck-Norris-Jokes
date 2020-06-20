@@ -8,15 +8,12 @@
 
 import UIKit
 
-class fullJokeViewController: UIViewController {
+class FullJokeViewController: UIViewController {
     @IBOutlet var fullJokeLabel: UILabel!
     var joke: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fullJokeLabel.text = joke
-        
     }
-
-
 }

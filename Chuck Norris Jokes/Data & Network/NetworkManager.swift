@@ -11,7 +11,7 @@ import Foundation
 private let jsonUrl = "https://api.chucknorris.io/jokes/random"
 
 
-extension ViewController {
+extension MainViewController {
     
     
 func fetchData() {
@@ -24,12 +24,16 @@ func fetchData() {
               
               do {
                 self.jokeChuck = try decoder.decode(Joke.self, from: data)
+                DispatchQueue.main.async {
+                self.jokeActivityIndicator.stopAnimating()
+                }
               } catch let error {
                   print(error.localizedDescription)
               }
               
           }.resume()
-         JokesList.shared.imageURL = jokeChuck?.icon_url
+        JokesList.shared.imageURL = jokeChuck?.icon_url
+        
       }
     
 }

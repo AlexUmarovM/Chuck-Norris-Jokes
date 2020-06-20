@@ -13,8 +13,6 @@ class JokesList {
 
     var jokes: [String] = []
     var imageURL: String?
-    var image: UIImage?
-    var joke: String?
 }
 
 
