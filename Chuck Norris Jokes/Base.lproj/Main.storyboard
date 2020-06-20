@@ -1,24 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B8u-gZ-cFb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Get Jokes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chuck_Norris_Jokes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="L75D18aVal8" translatesAutoresizingMaskIntoConstraints="NO" id="cKA-Re-YHx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="чак2" translatesAutoresizingMaskIntoConstraints="NO" id="xTN-YO-4gV">
+                                <rect key="frame" x="0.0" y="444.5" width="414" height="451.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojp-UH-OFq">
+                                <rect key="frame" x="132" y="372.5" width="150" height="42"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="CTJ-ba-MqN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Dsh-Sl-sl8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Get Joke"/>
+                                <connections>
+                                    <action selector="beatAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gpc-4e-pr0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLf-Jy-hSm">
+                                <rect key="frame" x="20" y="322.5" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="кулак" translatesAutoresizingMaskIntoConstraints="NO" id="xAh-GM-ecR" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="0.0" y="627" width="302" height="269"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xAh-GM-ecR" firstAttribute="height" secondItem="xTN-YO-4gV" secondAttribute="height" multiplier="0.596154" id="28I-tM-pg0"/>
+                            <constraint firstAttribute="bottom" secondItem="xAh-GM-ecR" secondAttribute="bottom" id="2Xn-m6-Szi"/>
+                            <constraint firstItem="xTN-YO-4gV" firstAttribute="centerX" secondItem="ojp-UH-OFq" secondAttribute="centerX" id="6Jp-UO-4LY"/>
+                            <constraint firstItem="cKA-Re-YHx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9PI-qn-U99"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xAh-GM-ecR" secondAttribute="trailing" constant="112" id="AOU-BE-58f"/>
+                            <constraint firstAttribute="trailing" secondItem="xTN-YO-4gV" secondAttribute="trailing" id="DiV-r9-Vlh"/>
+                            <constraint firstAttribute="bottom" secondItem="xTN-YO-4gV" secondAttribute="bottom" id="Kv8-vb-5WL"/>
+                            <constraint firstItem="xTN-YO-4gV" firstAttribute="centerX" secondItem="cKA-Re-YHx" secondAttribute="centerX" id="MR4-Rf-fwe"/>
+                            <constraint firstItem="xTN-YO-4gV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V0w-dp-uek"/>
+                            <constraint firstItem="SLf-Jy-hSm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WzS-uR-QeQ"/>
+                            <constraint firstItem="xTN-YO-4gV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YdR-rp-gGJ"/>
+                            <constraint firstItem="xTN-YO-4gV" firstAttribute="top" secondItem="ojp-UH-OFq" secondAttribute="bottom" constant="30" id="bnC-bM-QNx"/>
+                            <constraint firstAttribute="bottom" secondItem="cKA-Re-YHx" secondAttribute="bottom" id="dWJ-Wv-G57"/>
+                            <constraint firstItem="cKA-Re-YHx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f0z-KG-aE1"/>
+                            <constraint firstItem="xTN-YO-4gV" firstAttribute="height" secondItem="cKA-Re-YHx" secondAttribute="height" multiplier="0.504039" id="gdR-Vh-xwK"/>
+                            <constraint firstItem="cKA-Re-YHx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="inr-vb-88s"/>
+                            <constraint firstItem="xAh-GM-ecR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jK6-p0-n8Q"/>
+                            <constraint firstItem="xAh-GM-ecR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jcd-Wu-Bef"/>
+                            <constraint firstItem="SLf-Jy-hSm" firstAttribute="leading" secondItem="cKA-Re-YHx" secondAttribute="leading" constant="20" id="nyR-B2-hXE"/>
+                            <constraint firstItem="xAh-GM-ecR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oGL-93-6Oa"/>
+                            <constraint firstItem="SLf-Jy-hSm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="u88-xZ-OFz"/>
+                            <constraint firstItem="ojp-UH-OFq" firstAttribute="top" secondItem="SLf-Jy-hSm" secondAttribute="bottom" constant="30" id="xeC-Iu-Kys"/>
+                            <constraint firstItem="xTN-YO-4gV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yCv-bz-rre"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Get Jokes" image="smiley" catalog="system" id="ciU-z9-xcn"/>
+                    <navigationItem key="navigationItem" id="otk-W6-ptU">
+                        <barButtonItem key="rightBarButtonItem" title="Get List" id="xce-Hg-7Yv">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="CDY-mO-QAE" kind="presentation" id="UP7-3G-O1u"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="feastView" destination="xAh-GM-ecR" id="bXt-Nd-mpa"/>
+                        <outlet property="jokeButton" destination="ojp-UH-OFq" id="96z-YM-k32"/>
+                        <outlet property="jokeLabel" destination="SLf-Jy-hSm" id="haw-gl-CcL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2925" y="112"/>
+        </scene>
+        <!--Jokes List-->
+        <scene sceneID="nME-Cg-OHU">
+            <objects>
+                <tableViewController id="KXL-s9-bcF" customClass="JokesListTableViewController" customModule="Chuck_Norris_Jokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TTq-B2-JYr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jokeCell" id="eBg-Hz-G7X" customClass="JokeListTableViewCell" customModule="Chuck_Norris_Jokes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eBg-Hz-G7X" id="Tqx-S6-acu">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZX-En-bYV">
+                                            <rect key="frame" x="85" y="11.5" width="309" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5oH-u8-Y33">
+                                            <rect key="frame" x="8" y="0.0" width="55" height="43.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="55" id="TUb-is-p6T"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EZX-En-bYV" firstAttribute="leading" secondItem="5oH-u8-Y33" secondAttribute="trailing" constant="22" id="5dJ-pL-eoD"/>
+                                        <constraint firstItem="5oH-u8-Y33" firstAttribute="top" secondItem="Tqx-S6-acu" secondAttribute="top" id="Ejm-v9-ZWD"/>
+                                        <constraint firstAttribute="bottom" secondItem="5oH-u8-Y33" secondAttribute="bottom" id="V9l-SL-hhP"/>
+                                        <constraint firstItem="5oH-u8-Y33" firstAttribute="leading" secondItem="Tqx-S6-acu" secondAttribute="leading" constant="8" id="hVr-VU-6dF"/>
+                                        <constraint firstItem="5oH-u8-Y33" firstAttribute="centerY" secondItem="EZX-En-bYV" secondAttribute="centerY" id="htU-Ja-1N9"/>
+                                        <constraint firstAttribute="trailing" secondItem="EZX-En-bYV" secondAttribute="trailing" constant="20" id="v53-C5-fPp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellLabel" destination="EZX-En-bYV" id="Veo-aH-0Aq"/>
+                                    <outlet property="cellView" destination="5oH-u8-Y33" id="koC-hD-hy3"/>
+                                    <segue destination="qsO-e9-icf" kind="presentation" identifier="fullJoke" id="hfx-Oo-SN2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KXL-s9-bcF" id="eUg-Hj-vwg"/>
+                            <outlet property="delegate" destination="KXL-s9-bcF" id="8AY-eg-74s"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Jokes List" leftItemsSupplementBackButton="YES" id="TV6-f2-SlM">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="bLy-Mo-pr0"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SQb-MA-dnz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4750.7246376811599" y="111.83035714285714"/>
+        </scene>
+        <!--Full Joke View Controller-->
+        <scene sceneID="Sxw-m9-LTJ">
+            <objects>
+                <viewController id="qsO-e9-icf" customClass="fullJokeViewController" customModule="Chuck_Norris_Jokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ic-09-M71">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDd-qS-fNj">
+                                <rect key="frame" x="20" y="20" width="374" height="768"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RFo-fw-meJ" firstAttribute="bottom" secondItem="TDd-qS-fNj" secondAttribute="bottom" constant="20" id="ILJ-HC-lKY"/>
+                            <constraint firstItem="RFo-fw-meJ" firstAttribute="trailing" secondItem="TDd-qS-fNj" secondAttribute="trailing" constant="20" id="TN8-RI-wvt"/>
+                            <constraint firstItem="TDd-qS-fNj" firstAttribute="top" secondItem="RFo-fw-meJ" secondAttribute="top" constant="20" id="XyO-e5-6Xv"/>
+                            <constraint firstItem="TDd-qS-fNj" firstAttribute="leading" secondItem="RFo-fw-meJ" secondAttribute="leading" constant="20" id="vwJ-zr-7TD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RFo-fw-meJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Rw-Gq-wh8"/>
+                    <connections>
+                        <outlet property="fullJokeLabel" destination="TDd-qS-fNj" id="Gss-QG-jxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrK-6C-OfU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5651" y="112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8ul-D9-ryn">
+            <objects>
+                <navigationController id="CDY-mO-QAE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q31-qf-Q97">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KXL-s9-bcF" kind="relationship" relationship="rootViewController" id="8Kl-KT-Dwi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRf-Ks-ch5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3838" y="112"/>
+        </scene>
+        <!--Jokes List-->
+        <scene sceneID="ghk-1n-24J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B8u-gZ-cFb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Jokes List" image="plusminus.circle.fill" catalog="system" id="ZMQ-br-ulB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Or4-d8-c96">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RGR-ZW-N2c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSL-VZ-k9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2064" y="112"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="L75D18aVal8" width="1648" height="1091"/>
+        <image name="plusminus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="smiley" catalog="system" width="128" height="121"/>
+        <image name="кулак" width="419" height="305"/>
+        <image name="чак2" width="687" height="558"/>
+    </resources>
 </document>
