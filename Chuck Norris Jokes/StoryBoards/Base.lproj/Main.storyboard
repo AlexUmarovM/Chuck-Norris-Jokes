@@ -84,6 +84,7 @@
                             <constraint firstItem="xTN-YO-4gV" firstAttribute="centerX" secondItem="cKA-Re-YHx" secondAttribute="centerX" id="MR4-Rf-fwe"/>
                             <constraint firstItem="xTN-YO-4gV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V0w-dp-uek"/>
                             <constraint firstItem="lyF-MD-0eN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="VFk-Cs-bAh"/>
+                            <constraint firstItem="SLf-Jy-hSm" firstAttribute="top" relation="lessThanOrEqual" secondItem="lyF-MD-0eN" secondAttribute="bottom" constant="225" id="VIq-uO-3g7"/>
                             <constraint firstItem="SLf-Jy-hSm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WzS-uR-QeQ"/>
                             <constraint firstItem="ojp-UH-OFq" firstAttribute="top" secondItem="Kc8-qn-YcW" secondAttribute="bottom" constant="47.5" id="XTY-lx-93F"/>
                             <constraint firstItem="xTN-YO-4gV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YdR-rp-gGJ"/>
@@ -97,7 +98,6 @@
                             <constraint firstItem="xAh-GM-ecR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jcd-Wu-Bef"/>
                             <constraint firstItem="SLf-Jy-hSm" firstAttribute="leading" secondItem="cKA-Re-YHx" secondAttribute="leading" constant="20" id="nyR-B2-hXE"/>
                             <constraint firstItem="xAh-GM-ecR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oGL-93-6Oa"/>
-                            <constraint firstItem="SLf-Jy-hSm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="u88-xZ-OFz"/>
                             <constraint firstItem="ojp-UH-OFq" firstAttribute="top" secondItem="SLf-Jy-hSm" secondAttribute="bottom" constant="30" id="xeC-Iu-Kys"/>
                             <constraint firstItem="xTN-YO-4gV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yCv-bz-rre"/>
                         </constraints>
