@@ -13,6 +13,12 @@ class JokesList {
 
     var jokes: [String] = []
     var imageURL: String?
+    var numberOfJokes = 0
+    
+    func jokeCount() -> Int {
+           numberOfJokes += 1
+           return numberOfJokes
+       }
 }
 
 

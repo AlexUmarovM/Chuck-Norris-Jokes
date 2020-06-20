@@ -11,8 +11,7 @@ import UIKit
 class JokesListTableViewController: UITableViewController {
     
     var jokesList: [String] = []
-    var numberOfJokes = 0
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         jokesList += JokesList.shared.jokes
@@ -24,16 +23,9 @@ class JokesListTableViewController: UITableViewController {
         return jokesList.count
     }
     
-    func jokeCount() -> Int {
-        numberOfJokes += 1
-        return numberOfJokes
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "jokeCell", for: indexPath) as! JokeListTableViewCell
-        cell.getImage()
-        cell.cellLabel.text = "Joke : \(jokeCount())"
-        
+        cell.getProperties()
         return cell
     }
     

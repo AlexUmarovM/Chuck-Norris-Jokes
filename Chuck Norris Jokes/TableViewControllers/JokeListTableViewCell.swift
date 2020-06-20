@@ -12,7 +12,7 @@ class JokeListTableViewCell: UITableViewCell {
     @IBOutlet var cellLabel: UILabel!
     @IBOutlet var cellView: UIImageView!
     
-      func getImage(){
+      func getProperties(){
         DispatchQueue.global().async {
             guard let stringURL = JokesList.shared.imageURL else { return }
             guard let imageURL = URL(string: stringURL) else { return }
@@ -22,5 +22,6 @@ class JokeListTableViewCell: UITableViewCell {
                 self.cellView.image = UIImage(data: imageData)
             }
         }
+        cellLabel.text = "Joke : \(JokesList.shared.jokeCount())"
     }
 }
