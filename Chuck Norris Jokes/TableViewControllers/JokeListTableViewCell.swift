@@ -22,6 +22,5 @@ class JokeListTableViewCell: UITableViewCell {
                 self.cellView.image = UIImage(data: imageData)
             }
         }
-        cellLabel.text = "Joke : \(JokesList.shared.jokeCount())"
     }
 }
