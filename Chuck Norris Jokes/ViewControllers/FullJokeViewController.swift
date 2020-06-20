@@ -10,10 +10,10 @@ import UIKit
 
 class FullJokeViewController: UIViewController {
     @IBOutlet var fullJokeLabel: UILabel!
-    var joke: String?
+    var fullJoke: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fullJokeLabel.text = joke
+        fullJokeLabel.text = fullJoke
     }
 }

@@ -41,7 +41,7 @@ class JokesListTableViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         if segue.identifier == "fullJoke" {
             let fullJokeVC = segue.destination as! FullJokeViewController
-            fullJokeVC.joke = JokesList.shared.jokes[indexPath.row]
+            fullJokeVC.fullJoke = JokesList.shared.jokes[indexPath.row]
         }
     }
 }
