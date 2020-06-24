@@ -48,13 +48,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Kc8-qn-YcW">
-                                <rect key="frame" x="182" y="275" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="RyM-kk-Buq"/>
-                                    <constraint firstAttribute="width" constant="50" id="W82-gX-4Fp"/>
-                                </constraints>
-                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyF-MD-0eN">
                                 <rect key="frame" x="330" y="64" width="64" height="30"/>
                                 <constraints>
@@ -72,7 +65,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Kc8-qn-YcW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1rZ-kJ-SfC"/>
                             <constraint firstItem="xAh-GM-ecR" firstAttribute="height" secondItem="xTN-YO-4gV" secondAttribute="height" multiplier="0.596154" id="28I-tM-pg0"/>
                             <constraint firstAttribute="bottom" secondItem="xAh-GM-ecR" secondAttribute="bottom" id="2Xn-m6-Szi"/>
                             <constraint firstItem="xTN-YO-4gV" firstAttribute="centerX" secondItem="ojp-UH-OFq" secondAttribute="centerX" id="6Jp-UO-4LY"/>
@@ -86,7 +78,6 @@
                             <constraint firstItem="lyF-MD-0eN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="VFk-Cs-bAh"/>
                             <constraint firstItem="SLf-Jy-hSm" firstAttribute="top" relation="lessThanOrEqual" secondItem="lyF-MD-0eN" secondAttribute="bottom" constant="225" id="VIq-uO-3g7"/>
                             <constraint firstItem="SLf-Jy-hSm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WzS-uR-QeQ"/>
-                            <constraint firstItem="ojp-UH-OFq" firstAttribute="top" secondItem="Kc8-qn-YcW" secondAttribute="bottom" constant="47.5" id="XTY-lx-93F"/>
                             <constraint firstItem="xTN-YO-4gV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YdR-rp-gGJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lyF-MD-0eN" secondAttribute="trailing" constant="20" id="b3c-UU-Hkd"/>
                             <constraint firstItem="xTN-YO-4gV" firstAttribute="top" secondItem="ojp-UH-OFq" secondAttribute="bottom" constant="30" id="bnC-bM-QNx"/>
@@ -110,7 +101,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="JokeActivityIndicator" destination="Kc8-qn-YcW" id="QPX-LJ-8K8"/>
                         <outlet property="feastView" destination="xAh-GM-ecR" id="bXt-Nd-mpa"/>
                         <outlet property="jokeButton" destination="ojp-UH-OFq" id="96z-YM-k32"/>
                         <outlet property="jokeLabel" destination="SLf-Jy-hSm" id="haw-gl-CcL"/>
@@ -221,6 +211,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.42320564389999998" green="0.68848586079999996" blue="0.78825348620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZCb-ad-xU0">
+                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="KXL-s9-bcF" kind="relationship" relationship="rootViewController" id="8Kl-KT-Dwi"/>
                     </connections>

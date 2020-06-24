@@ -14,13 +14,13 @@
 		FA2F7567249C0E15001E517B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2F7565249C0E15001E517B /* Main.storyboard */; };
 		FA2F7569249C0E17001E517B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2F7568249C0E17001E517B /* Assets.xcassets */; };
 		FA2F756C249C0E17001E517B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2F756A249C0E17001E517B /* LaunchScreen.storyboard */; };
-		FA4B5EFE249CCF5500276AAA /* beat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA4B5EFD249CCF5400276AAA /* beat.mp3 */; };
 		FA4B5F00249CD3E600276AAA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B5EFF249CD3E600276AAA /* NetworkManager.swift */; };
 		FA4B5F02249CD48C00276AAA /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B5F01249CD48C00276AAA /* Joke.swift */; };
 		FA524354249E2F69005A9537 /* FullJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA524353249E2F69005A9537 /* FullJokeViewController.swift */; };
 		FA8E8791249CFB9000F8F4A6 /* JokesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E8790249CFB9000F8F4A6 /* JokesListTableViewController.swift */; };
 		FA8E8793249D01C800F8F4A6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E8792249D01C800F8F4A6 /* DataManager.swift */; };
 		FA8E8797249E226600F8F4A6 /* JokeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E8796249E226600F8F4A6 /* JokeListTableViewCell.swift */; };
+		FAED4E2524A38887007D557F /* beat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAED4E2424A38886007D557F /* beat.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,13 +35,13 @@
 		FA2F7568249C0E17001E517B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2F756B249C0E17001E517B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA2F756D249C0E17001E517B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA4B5EFD249CCF5400276AAA /* beat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat.mp3; sourceTree = "<group>"; };
 		FA4B5EFF249CD3E600276AAA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FA4B5F01249CD48C00276AAA /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		FA524353249E2F69005A9537 /* FullJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullJokeViewController.swift; sourceTree = "<group>"; };
 		FA8E8790249CFB9000F8F4A6 /* JokesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesListTableViewController.swift; sourceTree = "<group>"; };
 		FA8E8792249D01C800F8F4A6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		FA8E8796249E226600F8F4A6 /* JokeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListTableViewCell.swift; sourceTree = "<group>"; };
+		FAED4E2424A38886007D557F /* beat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat.mp3; path = ../../../../.Trash/beat.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,8 @@
 			children = (
 				FA2F755E249C0E14001E517B /* Chuck Norris Jokes */,
 				FA2F755D249C0E14001E517B /* Products */,
+				FAED4E2424A38886007D557F /* beat.mp3 */,
+				FA2F7568249C0E17001E517B /* Assets.xcassets */,
 				A6C287B3CC7533AFCFA261D0 /* Pods */,
 				56C8378E8E031D81979C64AA /* Frameworks */,
 			);
@@ -118,8 +120,6 @@
 			children = (
 				FA4B5EFF249CD3E600276AAA /* NetworkManager.swift */,
 				FA8E8792249D01C800F8F4A6 /* DataManager.swift */,
-				FA2F7568249C0E17001E517B /* Assets.xcassets */,
-				FA4B5EFD249CCF5400276AAA /* beat.mp3 */,
 			);
 			path = "Data & Network";
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 			files = (
 				FA2F756C249C0E17001E517B /* LaunchScreen.storyboard in Resources */,
 				FA2F7569249C0E17001E517B /* Assets.xcassets in Resources */,
-				FA4B5EFE249CCF5500276AAA /* beat.mp3 in Resources */,
+				FAED4E2524A38887007D557F /* beat.mp3 in Resources */,
 				FA2F7567249C0E15001E517B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

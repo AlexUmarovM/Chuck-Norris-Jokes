@@ -14,9 +14,8 @@ class MainViewController: UIViewController {
     @IBOutlet var feastView: SpringImageView!
     @IBOutlet var jokeLabel: UILabel!
     @IBOutlet var jokeButton: UIButton!
-    @IBOutlet var jokeActivityIndicator: UIActivityIndicatorView!
     var audioPlayer = AVAudioPlayer()
-    var jokeChuck: Joke?
+    var jokeChuck: String?
     var beatSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "beat", ofType: "mp3") ?? "")
     
     
@@ -29,11 +28,9 @@ class MainViewController: UIViewController {
         } catch let error {
             print(error.localizedDescription)
         }
+        NetworkManager.shared.fetchData()
         jokeLabel.text = "I'am Texas Ranger, son!"
         jokeButton.layer.cornerRadius = 10
-        fetchData()
-        jokeActivityIndicator.startAnimating()
-        jokeActivityIndicator.hidesWhenStopped = true
     }
     
     func beat() {
@@ -48,9 +45,9 @@ class MainViewController: UIViewController {
         feastView.isHidden = false
         beat()
         audioPlayer.play()
-        fetchData()
-        JokesList.shared.jokes += [jokeChuck?.value ?? ""]
-        jokeLabel.text = jokeChuck?.value ?? ""
+        NetworkManager.shared.fetchData()
+        jokeChuck = JokesList.shared.jokes.last
+        jokeLabel.text = jokeChuck ?? ""
     }
     
 }

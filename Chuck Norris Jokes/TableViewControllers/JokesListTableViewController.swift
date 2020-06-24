@@ -10,7 +10,7 @@ import UIKit
 
 class JokesListTableViewController: UITableViewController {
     
-    var jokesList: [String] = []
+   public var jokesList: [String] = []
     var numberOfJokes = 0
     override func viewDidLoad() {
         super.viewDidLoad()

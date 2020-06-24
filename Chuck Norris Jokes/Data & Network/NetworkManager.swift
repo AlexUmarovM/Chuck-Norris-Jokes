@@ -6,35 +6,37 @@
 //  Copyright © 2020 Александр Умаров. All rights reserved.
 //
 
-import Foundation
-    
+import UIKit
+import Alamofire
+
 private let jsonUrl = "https://api.chucknorris.io/jokes/random"
 
 
-extension MainViewController {
-    
-    
-func fetchData() {
-          guard let url = URL(string: jsonUrl) else { return }
-          
-          URLSession.shared.dataTask(with: url) { (data, _, _) in
-              guard let data = data else { return }
-              
-              let decoder = JSONDecoder()
-              
-              do {
-                self.jokeChuck = try decoder.decode(Joke.self, from: data)
-                DispatchQueue.main.async {
-                self.jokeActivityIndicator.stopAnimating()
+class NetworkManager {
+    static let shared = NetworkManager()
+    func fetchData() {
+        AF.request(jsonUrl)
+            .validate()
+            .responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    guard  let jsonData = value as? [String: Any] else { return }
+                    for data in jsonData {
+                        switch data.key {
+                        case "value":
+                            let joke = data.value as? String ?? ""
+                            JokesList.shared.jokes.append(joke)
+                        case "icon_url":
+                            let imageUrl = data.value
+                            JokesList.shared.imageURL = imageUrl as? String ?? ""
+                        default:
+                            break
+                        }
+                    }
+                case .failure(let error):
+                    print(error)
                 }
-              } catch let error {
-                  print(error.localizedDescription)
-              }
-              
-          }.resume()
-        JokesList.shared.imageURL = jokeChuck?.icon_url
-        
-      }
+        }
+    }
     
 }
-

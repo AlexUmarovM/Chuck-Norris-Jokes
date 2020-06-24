@@ -21,6 +21,7 @@ class JokeListTableViewCell: UITableViewCell {
             DispatchQueue.main.async {
                 self.cellView.image = UIImage(data: imageData)
             }
+        
         }
     }
 }
