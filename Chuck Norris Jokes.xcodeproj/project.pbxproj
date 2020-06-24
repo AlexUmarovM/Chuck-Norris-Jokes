@@ -20,7 +20,7 @@
 		FA8E8791249CFB9000F8F4A6 /* JokesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E8790249CFB9000F8F4A6 /* JokesListTableViewController.swift */; };
 		FA8E8793249D01C800F8F4A6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E8792249D01C800F8F4A6 /* DataManager.swift */; };
 		FA8E8797249E226600F8F4A6 /* JokeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E8796249E226600F8F4A6 /* JokeListTableViewCell.swift */; };
-		FAB5C27624A3C0D1004DA7B4 /* beat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAB5C27524A3C0D1004DA7B4 /* beat.mp3 */; };
+		FACCAB0824A3C1B50026D1D8 /* beat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FACCAB0724A3C1B50026D1D8 /* beat.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		FA8E8790249CFB9000F8F4A6 /* JokesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesListTableViewController.swift; sourceTree = "<group>"; };
 		FA8E8792249D01C800F8F4A6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		FA8E8796249E226600F8F4A6 /* JokeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListTableViewCell.swift; sourceTree = "<group>"; };
-		FAB5C27524A3C0D1004DA7B4 /* beat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat.mp3; path = ../../../../.Trash/beat.mp3; sourceTree = "<group>"; };
+		FACCAB0724A3C1B50026D1D8 /* beat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,7 @@
 		FAB5C27024A3C02F004DA7B4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				FAB5C27524A3C0D1004DA7B4 /* beat.mp3 */,
+				FACCAB0724A3C1B50026D1D8 /* beat.mp3 */,
 				FA2F7568249C0E17001E517B /* Assets.xcassets */,
 			);
 			name = Source;
@@ -230,7 +230,7 @@
 			files = (
 				FA2F756C249C0E17001E517B /* LaunchScreen.storyboard in Resources */,
 				FA2F7569249C0E17001E517B /* Assets.xcassets in Resources */,
-				FAB5C27624A3C0D1004DA7B4 /* beat.mp3 in Resources */,
+				FACCAB0824A3C1B50026D1D8 /* beat.mp3 in Resources */,
 				FA2F7567249C0E15001E517B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
